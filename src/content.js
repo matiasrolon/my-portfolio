@@ -46,7 +46,7 @@ export const content = {
         {
           role: "Team Leader",
           company: "E2E Travel Solutions",
-          logo: "/e2e.png",
+          logo: "/e2e.jpeg",
           url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Presente",
           bullets: [
@@ -71,7 +71,7 @@ export const content = {
         {
           role: "DBA",
           company: "Inrots Corporation",
-          logo: "/inrots.jpg",
+          logo: "/inrots.png",
           url: "https://www.inrots.com/",
           period: "Ene 2019 — Mar 2021",
           bullets: [
@@ -174,7 +174,7 @@ export const content = {
         {
           role: "Team Leader",
           company: "E2E Travel Solutions",
-          logo: "/e2e.png",
+          logo: "/e2e.jpeg",
           url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Present",
           bullets: [
@@ -199,7 +199,7 @@ export const content = {
         {
           role: "DBA",
           company: "Inrots Corporation",
-          logo: "/inrots.jpg",
+          logo: "/inrots.png",
           url: "https://www.inrots.com/",
           period: "Jan 2019 — Mar 2021",
           bullets: [
