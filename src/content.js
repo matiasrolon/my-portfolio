@@ -19,7 +19,7 @@ export const content = {
       location: "Moreno, Buenos Aires, Argentina",
       cta: "Hablemos",
       cvLabel: "Descargar CV",
-      cvHref: "/cv-es.pdf",
+      cvHref: "./cv-es.pdf",
     },
     profile: {
       label: "Sobre mi",
@@ -46,7 +46,7 @@ export const content = {
         {
           role: "Team Leader",
           company: "E2E Travel Solutions",
-          logo: "/e2e.jpeg",
+          logo: "./e2e.jpeg",
           url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Presente",
           bullets: [
@@ -59,7 +59,7 @@ export const content = {
         {
           role: "Full Stack Developer",
           company: "Tije Travel",
-          logo: "/tije.png",
+          logo: "./tije.png",
           url: "https://www.linkedin.com/company/tije-travel/posts/?feedView=all",
           period: "Abr 2021 — Sep 2024",
           bullets: [
@@ -71,7 +71,7 @@ export const content = {
         {
           role: "DBA",
           company: "Inrots Corporation",
-          logo: "/inrots.png",
+          logo: "./inrots.png",
           url: "https://www.inrots.com/",
           period: "Ene 2019 — Mar 2021",
           bullets: [
@@ -89,14 +89,14 @@ export const content = {
         {
           title: "Licenciatura en Sistemas de Información",
           place: "Universidad Nacional de Luján",
-          logo: "/unlu.png",
+          logo: "./unlu.png",
           url: "https://www.unlu.edu.ar/carg-sistemas-1713.html",
           period: "En progreso — 38/41 materias completadas",
         },
         {
           title: "Analista Programador Universitario",
           place: "Universidad Nacional de Luján",
-          logo: "/unlu.png",
+          logo: "./unlu.png",
           period: "Mar 2015 — Feb 2021",
         },
       ],
@@ -119,8 +119,8 @@ export const content = {
       body: "¿Tenés una oportunidad, un proyecto o simplemente querés charlar de tecnología? Estas son mis vías de contacto.",
       items: [
         { label: "Email", value: "matirolon96@gmail.com", href: "mailto:matirolon96@gmail.com", icon: "email" },
-        { label: "LinkedIn", value: "linkedin.com/in/matiasrolon", href: "https://linkedin.com/in/matirolon", icon: "linkedin" },
-        { label: "GitHub", value: "github.com/matiasrolon", href: "https://github.com/matirolon", icon: "github" },
+        { label: "LinkedIn", value: "linkedin.com/in/matiasrolon", href: "https://linkedin.com/in/matiasrolon", icon: "linkedin" },
+        { label: "GitHub", value: "github.com/matiasrolon", href: "https://github.com/matiasrolon", icon: "github" },
       ],
     },
     footer: {
@@ -147,7 +147,7 @@ export const content = {
       location: "Buenos Aires, Argentina",
       cta: "Let's talk",
       cvLabel: "Download CV",
-      cvHref: "/cv-en.pdf",
+      cvHref: "./cv-en.pdf",
     },
     profile: {
       label: "About me",
@@ -174,7 +174,7 @@ export const content = {
         {
           role: "Team Leader",
           company: "E2E Travel Solutions",
-          logo: "/e2e.jpeg",
+          logo: "./e2e.jpeg",
           url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Present",
           bullets: [
@@ -187,7 +187,7 @@ export const content = {
         {
           role: "Full Stack Developer",
           company: "Tije Travel",
-          logo: "/tije.png",
+          logo: "./tije.png",
           url: "https://www.linkedin.com/company/tije-travel/posts/?feedView=all",
           period: "Apr 2021 — Sep 2024",
           bullets: [
@@ -199,7 +199,7 @@ export const content = {
         {
           role: "DBA",
           company: "Inrots Corporation",
-          logo: "/inrots.png",
+          logo: "./inrots.png",
           url: "https://www.inrots.com/",
           period: "Jan 2019 — Mar 2021",
           bullets: [
@@ -217,14 +217,14 @@ export const content = {
         {
           title: "Bachelor's Degree in Information Systems",
           place: "Universidad Nacional de Luján",
-          logo: "/unlu.png",
+          logo: "./unlu.png",
           url: "https://www.unlu.edu.ar/carg-sistemas-1713.html",
           period: "In progress — 38/41 courses completed",
         },
         {
           title: "University Programmer Analyst (intermediate degree)",
           place: "Universidad Nacional de Luján",
-          logo: "/unlu.png",
+          logo: "./unlu.png",
           period: "Mar 2015 — Feb 2021",
         },
       ],

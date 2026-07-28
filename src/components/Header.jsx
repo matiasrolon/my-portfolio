@@ -5,7 +5,7 @@ export default function Header({ t }) {
     <section className="hero-section">
       <div className="hero">
         <div className="hero__avatar">
-          <img src="/avatar.jpg" alt={t.hero.name} className="hero__avatar-img" />
+          <img src="./avatar.jpg" alt={t.hero.name} className="hero__avatar-img" />
         </div>
 
         <div className="hero__text">
