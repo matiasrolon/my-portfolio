@@ -235,8 +235,8 @@ export const content = {
       body: "Have an opportunity, a project, or just want to talk tech? Here's how to reach me.",
       items: [
         { label: "Email", value: "matirolon96@gmail.com", href: "mailto:matirolon96@gmail.com", icon: "email" },
-        { label: "LinkedIn", value: "linkedin.com/in/matirolon", href: "https://linkedin.com/in/matirolon", icon: "linkedin" },
-        { label: "GitHub", value: "github.com/matirolon", href: "https://github.com/matirolon", icon: "github" },
+        { label: "LinkedIn", value: "linkedin.com/in/matiasrolon", href: "https://linkedin.com/in/matiasrolon", icon: "linkedin" },
+        { label: "GitHub", value: "github.com/matiasrolon", href: "https://github.com/matiasrolon", icon: "github" },
       ],
     },
     footer: {
