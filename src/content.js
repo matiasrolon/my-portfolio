@@ -9,6 +9,7 @@ export const content = {
         { label: "Conocimientos", path: "/skills" },
         { label: "Experiencia laboral", path: "/experience" },
         { label: "Formación académica", path: "/education" },
+        { label: "Proyectos", path: "/projects" },
         { label: "Contacto", path: "/contact" },
       ],
     },
@@ -17,11 +18,13 @@ export const content = {
       role: "Software Developer",
       location: "Moreno, Buenos Aires, Argentina",
       cta: "Hablemos",
+      cvLabel: "Descargar CV",
+      cvHref: "/cv-es.pdf",
     },
     profile: {
       label: "Perfil",
       body: [
-        "Soy un desarrollador full stack que busca expandir su experiencia trabajando en un entorno que fomente la curiosidad y el trabajo en equipo.",
+        "Soy un desarrollador full stack con 7 años en el rubro que busca expandir su experiencia trabajando en un entorno que fomente la curiosidad y el trabajo en equipo.",
         "Mis áreas de mayor interés son el machine learning para modelos predictivos y los grandes modelos de lenguaje (LLMs), aplicándolos actualmente en el ámbito académico.",
         "En mi tiempo libre me apasiona leer ciencia ficción, hacer deporte y descubrir nuevas tecnologías.",
       ],
@@ -92,6 +95,18 @@ export const content = {
         },
       ],
     },
+    projects: {
+      label: "Proyectos actuales",
+      items: [
+        {
+          name: "ri-query-optimization-by-rag",
+          url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
+          description:
+            "Retroalimentación por pseudo-relevancia generativa: Enmarcada dentro del área de Recuperación de Información, se propone realizar una comparación entre los métodos básicos de expansión de consultas y uno nuevo basado en la generación de términos adicionales a través del uso de un LLM contextualizado.",
+          tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
+        },
+      ],
+    },
     contact: {
       label: "Contacto",
       //heading: "Hablemos",
@@ -116,6 +131,7 @@ export const content = {
         { label: "Skills", path: "/skills" },
         { label: "Experience", path: "/experience" },
         { label: "Education", path: "/education" },
+        { label: "Projects", path: "/projects" },
         { label: "Contact", path: "/contact" },
       ],
     },
@@ -124,11 +140,13 @@ export const content = {
       role: "Software Developer",
       location: "Buenos Aires, Argentina",
       cta: "Let's talk",
+      cvLabel: "Download CV",
+      cvHref: "/cv-en.pdf",
     },
     profile: {
       label: "Profile",
       body: [
-        "I am a full stack developer looking to expand my experience by working in an environment that fosters curiosity and teamwork.",
+        "I am a full stack developer with 7 years in the field looking to expand my experience working in an environment that fosters curiosity and teamwork.",
         "My main area of interest, both professionally and academically, is machine learning for predictive models and NLP tasks, with a growing focus on large language models (LLMs) and their applications.",
         "In my free time, I am passionate about reading sci-fi, staying active through sports, and discovering emerging technologies.",
       ],
@@ -196,6 +214,18 @@ export const content = {
           title: "University Programmer Analyst (intermediate degree)",
           place: "Universidad Nacional de Luján",
           period: "Mar 2015 — Feb 2021",
+        },
+      ],
+    },
+    projects: {
+      label: "Current Projects",
+      items: [
+        {
+          name: "ri-query-optimization-by-rag",
+          url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
+          description:
+            "Generative Pseudo-Relevance Feedback: Framed within Information Retrieval, this research compares basic query expansion methods with a novel approach based on generating additional terms using a contextualized LLM.",
+          tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
         },
       ],
     },

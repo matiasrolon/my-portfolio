@@ -7,6 +7,7 @@ import Profile from "./components/Profile";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function getInitialLang() {
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/skills" element={<Skills t={t} />} />
         <Route path="/experience" element={<Experience t={t} />} />
         <Route path="/education" element={<Education t={t} />} />
+        <Route path="/projects" element={<Projects t={t} />} />
         <Route path="/contact" element={<Contact t={t} />} />
       </Route>
     </Routes>

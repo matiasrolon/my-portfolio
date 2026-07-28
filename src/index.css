@@ -391,6 +391,13 @@ a {
   font-size: 0.95rem;
 }
 
+.hero__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
 .hero__cta {
   display: inline-block;
   font-family: var(--font-mono);
@@ -404,6 +411,27 @@ a {
 
 .hero__cta:hover {
   opacity: 0.7;
+}
+
+.hero__cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-decoration: none;
+  color: var(--accent);
+  background: rgba(245, 196, 0, 0.08);
+  border: 1px solid rgba(245, 196, 0, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.hero__cv-btn:hover {
+  background: rgba(245, 196, 0, 0.18);
+  border-color: var(--accent);
+  transform: translateY(-1px);
 }
 
 
@@ -607,6 +635,66 @@ a {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   color: var(--accent);
+}
+
+/* ---------- projects ---------- */
+
+.projects__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--bg-raised);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(245, 196, 0, 0.4);
+}
+
+.project-card__header {
+  margin-bottom: 0.75rem;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.project-card__title a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+
+.project-card__title a:hover {
+  color: var(--accent);
+}
+
+.project-card__icon {
+  color: var(--ink-muted);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.project-card__title a:hover .project-card__icon {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+.project-card__desc {
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
 }
 
 /* ---------- contact ---------- */
