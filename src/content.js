@@ -47,6 +47,7 @@ export const content = {
           role: "Team Leader",
           company: "E2E Travel Solutions",
           logo: "/e2e.png",
+          url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Presente",
           bullets: [
             "Liderazgo de un equipo de 4 personas, asignando tareas y haciendo seguimiento de las entregas. Uso de ClickUp.",
@@ -59,6 +60,7 @@ export const content = {
           role: "Full Stack Developer",
           company: "Tije Travel",
           logo: "/tije.png",
+          url: "https://www.linkedin.com/company/tije-travel/posts/?feedView=all",
           period: "Abr 2021 — Sep 2024",
           bullets: [
             "Desarrollo de APIs backend en Python (Django, FastAPI, Serverless) para sistemas de ventas del sector turístico.",
@@ -70,6 +72,7 @@ export const content = {
           role: "DBA",
           company: "Inrots Corporation",
           logo: "/inrots.jpg",
+          url: "https://www.inrots.com/",
           period: "Ene 2019 — Mar 2021",
           bullets: [
             "Administración de bases de datos SQL Server: consultas, triggers, optimización y mantenimiento.",
@@ -86,11 +89,14 @@ export const content = {
         {
           title: "Licenciatura en Sistemas de Información",
           place: "Universidad Nacional de Luján",
+          logo: "/unlu.png",
+          url: "https://www.unlu.edu.ar/carg-sistemas-1713.html",
           period: "En progreso — 38/41 materias completadas",
         },
         {
-          title: "Analista Programador Universitario (título intermedio)",
+          title: "Analista Programador Universitario",
           place: "Universidad Nacional de Luján",
+          logo: "/unlu.png",
           period: "Mar 2015 — Feb 2021",
         },
       ],
@@ -169,6 +175,7 @@ export const content = {
           role: "Team Leader",
           company: "E2E Travel Solutions",
           logo: "/e2e.png",
+          url: "https://www.e2etravelsolutions.com/",
           period: "Sep 2024 — Present",
           bullets: [
             "Lead a team of 4 developers, assigning tasks and tracking deliverables. Use of ClickUp.",
@@ -181,6 +188,7 @@ export const content = {
           role: "Full Stack Developer",
           company: "Tije Travel",
           logo: "/tije.png",
+          url: "https://www.linkedin.com/company/tije-travel/posts/?feedView=all",
           period: "Apr 2021 — Sep 2024",
           bullets: [
             "Backend API development in Python (Django, FastAPI, Serverless) for travel-booking systems.",
@@ -192,6 +200,7 @@ export const content = {
           role: "DBA",
           company: "Inrots Corporation",
           logo: "/inrots.jpg",
+          url: "https://www.inrots.com/",
           period: "Jan 2019 — Mar 2021",
           bullets: [
             "SQL Server database administration: queries, triggers, optimization and maintenance.",
@@ -208,11 +217,14 @@ export const content = {
         {
           title: "Bachelor's Degree in Information Systems",
           place: "Universidad Nacional de Luján",
+          logo: "/unlu.png",
+          url: "https://www.unlu.edu.ar/carg-sistemas-1713.html",
           period: "In progress — 38/41 courses completed",
         },
         {
           title: "University Programmer Analyst (intermediate degree)",
           place: "Universidad Nacional de Luján",
+          logo: "/unlu.png",
           period: "Mar 2015 — Feb 2021",
         },
       ],
