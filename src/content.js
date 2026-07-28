@@ -22,7 +22,7 @@ export const content = {
       cvHref: "/cv-es.pdf",
     },
     profile: {
-      label: "Perfil",
+      label: "Sobre mi",
       body: [
         "Soy un desarrollador full stack con 7 años en el rubro que busca expandir su experiencia trabajando en un entorno que fomente la curiosidad y el trabajo en equipo.",
         "Mis áreas de mayor interés son el machine learning para modelos predictivos y los grandes modelos de lenguaje (LLMs), aplicándolos actualmente en el ámbito académico.",
@@ -150,7 +150,7 @@ export const content = {
       cvHref: "/cv-en.pdf",
     },
     profile: {
-      label: "Profile",
+      label: "About me",
       body: [
         "I am a full stack developer with 7 years in the field looking to expand my experience working in an environment that fosters curiosity and teamwork.",
         "My main area of interest, both professionally and academically, is machine learning for predictive models and NLP tasks, with a growing focus on large language models (LLMs) and their applications.",
@@ -169,7 +169,7 @@ export const content = {
       ],
     },
     experience: {
-      label: "Employment History",
+      label: "Work Experience",
       items: [
         {
           role: "Team Leader",
