@@ -752,20 +752,10 @@ a {
 
 .contact-list__item {
   border-bottom: 1px solid var(--line);
-}
-
-.contact-list__item a {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1.1rem 0;
-  text-decoration: none;
-  transition: color 0.15s ease, padding-left 0.15s ease;
-}
-
-.contact-list__item a:hover {
-  color: var(--accent);
-  padding-left: 0.4rem;
 }
 
 .contact-list__icon {
@@ -774,11 +764,6 @@ a {
   justify-content: center;
   color: var(--ink-muted);
   flex-shrink: 0;
-  transition: color 0.15s ease;
-}
-
-.contact-list__item a:hover .contact-list__icon {
-  color: var(--accent);
 }
 
 .contact-list__label {
@@ -795,9 +780,36 @@ a {
   overflow-wrap: anywhere;
 }
 
-.contact-list__arrow {
-  font-family: var(--font-mono);
+.contact-list__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 6px;
   color: var(--ink-muted);
+  cursor: pointer;
+  padding: 0.45rem;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.contact-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.08);
+}
+
+.contact-btn.is-copied {
+  color: #4ade80;
+  border-color: #4ade80;
 }
 
 /* ---------- footer ---------- */
@@ -886,5 +898,8 @@ a {
   }
   .timeline__item {
     position: relative;
+  }
+  .contact-list__value {
+    display: none;
   }
 }

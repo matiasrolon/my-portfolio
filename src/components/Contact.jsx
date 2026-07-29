@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const SocialIcon = ({ type, size = 18 }) => {
   const icons = {
     email: (
@@ -20,6 +22,60 @@ const SocialIcon = ({ type, size = 18 }) => {
   return icons[type] || null;
 };
 
+function CopyButton({ value }) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(value);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // fallback
+    }
+  };
+
+  return (
+    <button
+      type="button"
+      className={`contact-btn ${copied ? "is-copied" : ""}`}
+      onClick={handleCopy}
+      aria-label={`Copy ${value}`}
+      title={copied ? "✓" : "Copy"}
+    >
+      {copied ? (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      ) : (
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+        </svg>
+      )}
+    </button>
+  );
+}
+
+function RedirectButton({ href }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="contact-btn"
+      aria-label="Open link"
+      title="Open"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+        <polyline points="15 3 21 3 21 9" />
+        <line x1="10" y1="14" x2="21" y2="3" />
+      </svg>
+    </a>
+  );
+}
+
 export default function Contact({ t }) {
   return (
     <section className="section section--contact" id="contact">
@@ -29,16 +85,15 @@ export default function Contact({ t }) {
       <ul className="contact-list">
         {t.contact.items.map((item) => (
           <li className="contact-list__item" key={item.label}>
-            <a href={item.href} target="_blank" rel="noreferrer">
-              <span className="contact-list__icon">
-                <SocialIcon type={item.icon} size={20} />
-              </span>
-              <span className="contact-list__label">{item.label}</span>
-              <span className="contact-list__value">{item.value}</span>
-              <span className="contact-list__arrow" aria-hidden="true">
-                ↗
-              </span>
-            </a>
+            <span className="contact-list__icon">
+              <SocialIcon type={item.icon} size={20} />
+            </span>
+            <span className="contact-list__label">{item.label}</span>
+            <span className="contact-list__value">{item.value}</span>
+            <div className="contact-list__actions">
+              <RedirectButton href={item.href} />
+              <CopyButton value={item.value} />
+            </div>
           </li>
         ))}
       </ul>
