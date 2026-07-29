@@ -219,9 +219,11 @@ a {
   .topbar__nav {
     display: flex;
   }
+
   .hamburger {
     display: none !important;
   }
+
   .sidebar,
   .sidebar-overlay {
     display: none !important;
@@ -362,6 +364,8 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.50);
+  transition: transform 0.4s ease;
 }
 
 .hero__text {
@@ -382,8 +386,16 @@ a {
 }
 
 @keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero__location {
@@ -857,10 +869,12 @@ a {
   .cursor {
     animation: none;
   }
+
   .sidebar,
   .sidebar-overlay {
     transition: none;
   }
+
   .hamburger__line {
     transition: none;
   }
@@ -876,29 +890,37 @@ a {
     align-items: center;
     text-align: center;
   }
+
   .hero__avatar {
-    width: 120px;
-    height: 140px;
+    width: 100%;
+    height: 50vh;
+    border-radius: 16px;
   }
+
   .hero__actions {
     justify-content: center;
   }
+
   .eyebrow {
     text-align: center;
   }
+
   .timeline__head {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
   }
+
   .timeline__toggle {
     position: absolute;
     top: 1.25rem;
     right: 1.25rem;
   }
+
   .timeline__item {
     position: relative;
   }
+
   .contact-list__value {
     display: none;
   }
