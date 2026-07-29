@@ -439,7 +439,7 @@ a {
 /* ---------- sections ---------- */
 
 .section {
-  padding: var(--gap-section) 0 0;
+  padding: 2rem 0 var(--gap-section);
   border-top: 1px solid var(--line);
   scroll-margin-top: calc(var(--topbar-h) + 1rem);
 }
