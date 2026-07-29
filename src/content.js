@@ -118,7 +118,7 @@ export const content = {
       //heading: "Hablemos",
       body: "¿Tenés una oportunidad, un proyecto o simplemente querés charlar de tecnología? Estas son mis vías de contacto.",
       items: [
-        { label: "Email", value: "matirolon96@gmail.com", href: "mailto:matirolon96@gmail.com", icon: "email" },
+        { label: "Email", value: "matirolon96@gmail.com", href: "https://mail.google.com/mail/?view=cm&to=matirolon96@gmail.com", icon: "email" },
         { label: "LinkedIn", value: "linkedin.com/in/matiasrolon", href: "https://linkedin.com/in/matiasrolon", icon: "linkedin" },
         { label: "GitHub", value: "github.com/matiasrolon", href: "https://github.com/matiasrolon", icon: "github" },
       ],
@@ -246,7 +246,7 @@ export const content = {
       heading: "Let's talk",
       body: "Have an opportunity, a project, or just want to talk tech? Here's how to reach me.",
       items: [
-        { label: "Email", value: "matirolon96@gmail.com", href: "mailto:matirolon96@gmail.com", icon: "email" },
+        { label: "Email", value: "matirolon96@gmail.com", href: "https://mail.google.com/mail/?view=cm&to=matirolon96@gmail.com", icon: "email" },
         { label: "LinkedIn", value: "linkedin.com/in/matiasrolon", href: "https://linkedin.com/in/matiasrolon", icon: "linkedin" },
         { label: "GitHub", value: "github.com/matiasrolon", href: "https://github.com/matiasrolon", icon: "github" },
       ],
