@@ -1,15 +1,53 @@
-import { useState, useEffect } from "react";
-import { Outlet, Link, useLocation } from "react-router-dom";
+import { useState, useEffect, useCallback } from "react";
 import Footer from "./Footer";
 
-export default function Layout({ t, lang, onToggleLang }) {
+export default function Layout({ t, lang, onToggleLang, children }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
+  const [activeSection, setActiveSection] = useState("home");
 
-  // Close menu on route change
-  useEffect(() => {
+  // Close menu when clicking a nav link
+  const handleNavClick = useCallback((e, sectionId) => {
+    e.preventDefault();
     setMenuOpen(false);
-  }, [location.pathname]);
+
+    if (sectionId === "home") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
+  // Track which section is currently in view
+  useEffect(() => {
+    const sectionIds = t.nav.items.map((item) => item.sectionId);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id || "home");
+          }
+        }
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+
+    for (const id of sectionIds) {
+      if (id === "home") {
+        // Observe the hero section
+        const heroEl = document.querySelector(".hero-section");
+        if (heroEl) observer.observe(heroEl);
+      } else {
+        const el = document.getElementById(id);
+        if (el) observer.observe(el);
+      }
+    }
+
+    return () => observer.disconnect();
+  }, [t.nav.items]);
 
   // Prevent body scroll when menu is open
   useEffect(() => {
@@ -32,19 +70,24 @@ export default function Layout({ t, lang, onToggleLang }) {
           <span className="hamburger__line" />
         </button>
 
-        <Link to="/" className="brand">
+        <a
+          href="#home"
+          className="brand"
+          onClick={(e) => handleNavClick(e, "home")}
+        >
           mr<span className="brand__dot">.</span>
-        </Link>
+        </a>
 
         <nav className="topbar__nav" aria-label="Main navigation">
           {t.nav.items.map((item) => (
-            <Link
-              to={item.path}
-              className={`topbar__nav-link ${location.pathname === item.path ? "is-active" : ""}`}
-              key={item.path}
+            <a
+              href={`#${item.sectionId}`}
+              className={`topbar__nav-link ${activeSection === item.sectionId ? "is-active" : ""}`}
+              key={item.sectionId}
+              onClick={(e) => handleNavClick(e, item.sectionId)}
             >
               {item.label}
-            </Link>
+            </a>
           ))}
         </nav>
 
@@ -85,21 +128,22 @@ export default function Layout({ t, lang, onToggleLang }) {
 
         <ul className="sidebar__nav">
           {t.nav.items.map((item) => (
-            <li key={item.path}>
-              <Link
-                to={item.path}
-                className={`sidebar__link ${location.pathname === item.path ? "is-active" : ""}`}
+            <li key={item.sectionId}>
+              <a
+                href={`#${item.sectionId}`}
+                className={`sidebar__link ${activeSection === item.sectionId ? "is-active" : ""}`}
+                onClick={(e) => handleNavClick(e, item.sectionId)}
               >
                 <span className="sidebar__link-marker">//</span>
                 {item.label}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
       </nav>
 
       <main className="main-content">
-        <Outlet />
+        {children}
       </main>
 
       <Footer t={t} />

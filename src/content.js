@@ -5,12 +5,12 @@ export const content = {
     nav: {
       toggle: "EN",
       items: [
-        { label: "Inicio", path: "/" },
-        { label: "Conocimientos", path: "/skills" },
-        { label: "Experiencia laboral", path: "/experience" },
-        { label: "Formación académica", path: "/education" },
-        { label: "Proyectos", path: "/projects" },
-        { label: "Contacto", path: "/contact" },
+        { label: "Inicio", sectionId: "home" },
+        { label: "Conocimientos", sectionId: "skills" },
+        { label: "Experiencia laboral", sectionId: "experience" },
+        { label: "Formación académica", sectionId: "education" },
+        { label: "Proyectos", sectionId: "projects" },
+        { label: "Contacto", sectionId: "contact" },
       ],
     },
     hero: {
@@ -133,12 +133,12 @@ export const content = {
     nav: {
       toggle: "ES",
       items: [
-        { label: "Home", path: "/" },
-        { label: "Skills", path: "/skills" },
-        { label: "Experience", path: "/experience" },
-        { label: "Education", path: "/education" },
-        { label: "Projects", path: "/projects" },
-        { label: "Contact", path: "/contact" },
+        { label: "Home", sectionId: "home" },
+        { label: "Skills", sectionId: "skills" },
+        { label: "Experience", sectionId: "experience" },
+        { label: "Education", sectionId: "education" },
+        { label: "Projects", sectionId: "projects" },
+        { label: "Contact", sectionId: "contact" },
       ],
     },
     hero: {

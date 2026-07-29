@@ -23,6 +23,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -438,8 +439,9 @@ a {
 /* ---------- sections ---------- */
 
 .section {
-  padding: 2rem 0 0;
+  padding: var(--gap-section) 0 0;
   border-top: 1px solid var(--line);
+  scroll-margin-top: calc(var(--topbar-h) + 1rem);
 }
 
 .section:first-of-type {
@@ -858,10 +860,19 @@ a {
   .hero {
     padding-top: 1rem;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .hero__avatar {
     width: 120px;
     height: 140px;
+  }
+  .hero__actions {
+    justify-content: center;
+  }
+  .eyebrow {
+    text-align: center;
   }
   .timeline__head {
     flex-direction: column;

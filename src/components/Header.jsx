@@ -1,8 +1,6 @@
-import { Link } from "react-router-dom";
-
 export default function Header({ t }) {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="home">
       <div className="hero">
         <div className="hero__avatar">
           <img src="./avatar.jpg" alt={t.hero.name} className="hero__avatar-img" />
@@ -18,9 +16,17 @@ export default function Header({ t }) {
           </h1>
           <p className="hero__location">{t.hero.location}</p>
           <div className="hero__actions">
-            <Link to="/contact" className="hero__cta">
+            <a
+              href="#contact"
+              className="hero__cta"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t.hero.cta} ↓
-            </Link>
+            </a>
             <a href={t.hero.cvHref} download className="hero__cv-btn">
               {t.hero.cvLabel} ⤓
             </a>
