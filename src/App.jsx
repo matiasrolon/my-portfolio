@@ -16,8 +16,16 @@ function getInitialLang() {
   return browserLang && browserLang.toLowerCase().startsWith("en") ? "en" : "es";
 }
 
+function getInitialTheme() {
+  if (typeof window === "undefined") return "dark";
+  const saved = localStorage.getItem("theme");
+  if (saved === "light" || saved === "dark") return saved;
+  return "dark";
+}
+
 export default function App() {
   const [lang, setLang] = useState(getInitialLang);
+  const [theme, setTheme] = useState(getInitialTheme);
   const t = content[lang];
 
   useEffect(() => {
@@ -25,10 +33,16 @@ export default function App() {
     window.__cvLang = lang;
   }, [lang]);
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   const toggleLang = () => setLang((prev) => (prev === "es" ? "en" : "es"));
+  const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
   return (
-    <Layout t={t} lang={lang} onToggleLang={toggleLang}>
+    <Layout t={t} lang={lang} onToggleLang={toggleLang} theme={theme} onToggleTheme={toggleTheme}>
       <Header t={t} />
       <Profile t={t} />
       <Skills t={t} />

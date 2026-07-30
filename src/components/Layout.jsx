@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Footer from "./Footer";
 
-export default function Layout({ t, lang, onToggleLang, children }) {
+export default function Layout({ t, lang, onToggleLang, theme, onToggleTheme, children }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -100,6 +100,16 @@ export default function Layout({ t, lang, onToggleLang, children }) {
           <span className={lang === "es" ? "lang-switch__opt is-active" : "lang-switch__opt"}>ES</span>
           <span className="lang-switch__sep">/</span>
           <span className={lang === "en" ? "lang-switch__opt is-active" : "lang-switch__opt"}>EN</span>
+        </button>
+
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={onToggleTheme}
+          aria-label="Toggle theme"
+          title={theme === "dark" ? "Light mode" : "Dark mode"}
+        >
+          {theme === "dark" ? "☀️" : "🌙"}
         </button>
       </header>
 
