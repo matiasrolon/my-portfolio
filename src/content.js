@@ -37,7 +37,7 @@ export const content = {
         { title: "Bases de datos", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
         { title: "Herramientas", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
         { title: "Otros", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
-        { title: "Idiomas", icon: "globe", items: ["Inglés (B1)"] },
+        { title: "Idiomas", icon: "globe", items: ["Inglés (Intermedio - B1)"] },
       ],
     },
     experience: {
@@ -106,11 +106,18 @@ export const content = {
       subtitle: "Investigación y desarrollo enfocado en las áreas que más me interesan actualmente.",
       items: [
         {
-          name: "ri-query-optimization-by-rag",
+          name: "Retroalimentación por pseudo-relevancia generativa",
           url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
           description:
-            "Retroalimentación por pseudo-relevancia generativa: Enmarcada dentro del área de Recuperación de Información, se propone realizar una comparación entre los métodos básicos de expansión de consultas y uno nuevo basado en la generación de términos adicionales a través del uso de un LLM contextualizado.",
+            "Enmarcada dentro del área de Recuperación de Información, se propone realizar una comparación entre los métodos básicos de expansión de consultas y uno nuevo basado en la generación de términos adicionales a través del uso de un LLM contextualizado. El objetivo es optimizar la consulta original del usuario, formando una nueva que obtenga mejores resultados",
           tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
+        },
+        {
+          name: "Predicción de bancarrota mediante métodos de ensamble",
+          url: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
+          description:
+            "Notebook de ML que predice bancarrota de empresas usando el dataset \"American Companies Bankruptcy Prediction\" (Kaggle). Incluye EDA con detección de outliers y correlaciones (Spearman), preprocesamiento (eliminación de variables redundantes, escalado, manejo de desbalanceo de clases), y entrenamiento de 4 modelos calibrados (Logistic Regression, Random Forest, MLP, SVC) combinados en un ensamble soft-voting. Se prioriza el recall (minimizar falsos negativos), y se incluye un breve análisis final incluyendo qué variables del dataset afectan más la predicción.",
+          tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
         },
       ],
     },
@@ -166,7 +173,7 @@ export const content = {
         { title: "Databases", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
         { title: "Tools", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
         { title: "Others", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
-        { title: "Languages", icon: "globe", items: ["English (B1)"] },
+        { title: "Languages", icon: "globe", items: ["English (Intermediate - B1)"] },
       ],
     },
     experience: {
@@ -235,11 +242,18 @@ export const content = {
       subtitle: "Research and development focused on topics I am currently exploring.",
       items: [
         {
-          name: "ri-query-optimization-by-rag",
+          name: "Generative Pseudo-Relevance Feedback",
           url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
           description:
-            "Generative Pseudo-Relevance Feedback: Framed within Information Retrieval, this research compares basic query expansion methods with a novel approach based on generating additional terms using a contextualized LLM.",
+            "Framed within Information Retrieval, this research compares basic query expansion methods with a novel approach based on generating additional terms using a contextualized LLM. The goal is to optimize the user's original query, creating a new one that achieves better results.",
           tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
+        },
+        {
+          name: "Bankruptcy Prediction by Ensemble Methods",
+          url: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
+          description:
+            "ML notebook predicting corporate bankruptcy using the \"American Companies Bankruptcy Prediction\" dataset (Kaggle). Includes EDA with outlier detection and Spearman correlations, preprocessing (feature selection, scaling, class imbalance handling), and training 4 calibrated models (Logistic Regression, Random Forest, MLP, SVC) combined in a soft-voting ensemble.  Recall is prioritized (minimizing false negatives), and we include a brief final analysis to explain key predictive features.",
+          tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
         },
       ],
     },

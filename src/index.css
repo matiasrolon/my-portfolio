@@ -81,7 +81,6 @@ a {
   color: var(--ink-muted);
   font-size: 0.95rem;
   margin: 0 0 1.75rem;
-  max-width: 60ch;
   line-height: 1.5;
 }
 
@@ -783,12 +782,10 @@ a {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 .project-card__title a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
   text-decoration: none;
   color: var(--ink);
   transition: color 0.15s ease;
@@ -799,6 +796,9 @@ a {
 }
 
 .project-card__icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.35rem;
   color: var(--ink-muted);
   transition: color 0.15s ease, transform 0.15s ease;
 }
