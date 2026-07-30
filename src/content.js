@@ -9,7 +9,7 @@ export const content = {
         { label: "Conocimientos", sectionId: "skills" },
         { label: "Experiencia laboral", sectionId: "experience" },
         { label: "Formación académica", sectionId: "education" },
-        { label: "Proyectos", sectionId: "projects" },
+        { label: "R&D", sectionId: "projects" },
         { label: "Contacto", sectionId: "contact" },
       ],
     },
@@ -32,12 +32,12 @@ export const content = {
     skills: {
       label: "Conocimientos",
       groups: [
-        { title: "Lenguajes / Frameworks", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
-        { title: "AWS", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
-        { title: "Bases de datos", items: ["MySQL", "PostgreSQL", "MongoDB"] },
-        { title: "Herramientas", items: ["Git / GitHub", "Docker", "Claude Code"] },
-        { title: "Otros", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
-        { title: "Idiomas", items: ["Inglés (B1)"] },
+        { title: "Lenguajes / Frameworks", icon: "code", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
+        { title: "AWS", icon: "cloud", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
+        { title: "Bases de datos", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
+        { title: "Herramientas", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
+        { title: "Otros", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
+        { title: "Idiomas", icon: "globe", items: ["Inglés (B1)"] },
       ],
     },
     experience: {
@@ -102,7 +102,8 @@ export const content = {
       ],
     },
     projects: {
-      label: "Proyectos actuales",
+      label: "R&D",
+      subtitle: "Investigación y desarrollo enfocado en las áreas que más me interesan actualmente.",
       items: [
         {
           name: "ri-query-optimization-by-rag",
@@ -137,7 +138,7 @@ export const content = {
         { label: "Skills", sectionId: "skills" },
         { label: "Experience", sectionId: "experience" },
         { label: "Education", sectionId: "education" },
-        { label: "Projects", sectionId: "projects" },
+        { label: "R&D", sectionId: "projects" },
         { label: "Contact", sectionId: "contact" },
       ],
     },
@@ -160,12 +161,12 @@ export const content = {
     skills: {
       label: "Skills",
       groups: [
-        { title: "Languages / Frameworks", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
-        { title: "AWS", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
-        { title: "Databases", items: ["MySQL", "PostgreSQL", "MongoDB"] },
-        { title: "Tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
-        { title: "Others", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
-        { title: "Languages", items: ["English (B1)"] },
+        { title: "Languages / Frameworks", icon: "code", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
+        { title: "AWS", icon: "cloud", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
+        { title: "Databases", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
+        { title: "Tools", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
+        { title: "Others", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
+        { title: "Languages", icon: "globe", items: ["English (B1)"] },
       ],
     },
     experience: {
@@ -230,7 +231,8 @@ export const content = {
       ],
     },
     projects: {
-      label: "Current Projects",
+      label: "R&D",
+      subtitle: "Research and development focused on topics I am currently exploring.",
       items: [
         {
           name: "ri-query-optimization-by-rag",

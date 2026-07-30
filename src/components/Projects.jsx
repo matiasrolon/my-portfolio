@@ -2,6 +2,9 @@ export default function Projects({ t }) {
   return (
     <section className="section" id="projects">
       <h2 className="section__title">// {t.projects.label}</h2>
+      {t.projects.subtitle && (
+        <p className="section__subtitle">{t.projects.subtitle}</p>
+      )}
       <div className="projects__grid">
         {t.projects.items.map((project) => (
           <article className="project-card" key={project.name}>
