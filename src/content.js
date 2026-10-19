@@ -34,7 +34,7 @@ export const content = {
       groups: [
         { title: "Lenguajes / Frameworks", icon: "code", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
         { title: "AWS", icon: "cloud", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
-        { title: "Bases de datos", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
+        { title: "Bases de datos", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB", "Supabase"] },
         { title: "Herramientas", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
         { title: "Otros", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
         { title: "Idiomas", icon: "globe", items: ["Inglés (Intermedio - B1)"] },
@@ -119,6 +119,13 @@ export const content = {
             "Notebook de ML que predice bancarrota de empresas usando el dataset \"American Companies Bankruptcy Prediction\" (Kaggle). Incluye EDA con detección de outliers y correlaciones (Spearman), preprocesamiento (eliminación de variables redundantes, escalado, manejo de desbalanceo de clases), y entrenamiento de 4 modelos calibrados (Logistic Regression, Random Forest, MLP, SVC) combinados en un ensamble soft-voting. Se prioriza el recall (minimizar falsos negativos), y se incluye un breve análisis final incluyendo qué variables del dataset afectan más la predicción.",
           tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
         },
+        {
+          name: "Primatica Web",
+          url: "https://github.com/matiasrolon/primatica-web",
+          description:
+            "Tienda web para un emprendimiento de impresiones 3D, totalmente administrable por el cliente. Desarrollada en React con infraestructura gratuita, utilizando Supabase para la base de datos y API, y Cloudinary para el almacenamiento de imágenes.",
+          tags: ["React", "Supabase", "Cloudinary", "PostgreSQL", "E-commerce"],
+        },
       ],
     },
     contact: {
@@ -170,7 +177,7 @@ export const content = {
       groups: [
         { title: "Languages / Frameworks", icon: "code", items: ["Python", "Django", "FastAPI", "Serverless", "React", "NextJS"] },
         { title: "AWS", icon: "cloud", items: ["Lambda", "DynamoDB", "SQS", "CloudWatch", "ECS", "API Gateway"] },
-        { title: "Databases", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB"] },
+        { title: "Databases", icon: "database", items: ["MySQL", "PostgreSQL", "MongoDB", "Supabase"] },
         { title: "Tools", icon: "tools", items: ["Git / GitHub", "Docker", "Claude Code"] },
         { title: "Others", icon: "sparkles", items: ["GraphQL", "Machine Learning", "scikit-learn", "NLP", "pandas"] },
         { title: "Languages", icon: "globe", items: ["English (Intermediate - B1)"] },
@@ -254,6 +261,13 @@ export const content = {
           description:
             "ML notebook predicting corporate bankruptcy using the \"American Companies Bankruptcy Prediction\" dataset (Kaggle). Includes EDA with outlier detection and Spearman correlations, preprocessing (feature selection, scaling, class imbalance handling), and training 4 calibrated models (Logistic Regression, Random Forest, MLP, SVC) combined in a soft-voting ensemble.  Recall is prioritized (minimizing false negatives), and we include a brief final analysis to explain key predictive features.",
           tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
+        },
+        {
+          name: "Primatica Web",
+          url: "https://github.com/matiasrolon/primatica-web",
+          description:
+            "Web store for a 3D printing venture, fully manageable by the client. Built on React with free-tier infrastructure, using Supabase for the database and API, and Cloudinary for image storage.",
+          tags: ["React", "Supabase", "Cloudinary", "PostgreSQL", "E-commerce"],
         },
       ],
     },
