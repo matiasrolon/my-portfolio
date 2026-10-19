@@ -104,24 +104,36 @@ export const content = {
     projects: {
       label: "R&D",
       subtitle: "Investigación y desarrollo enfocado en las áreas que más me interesan actualmente.",
+      repoLabel: "Repo",
+      siteLabel: "Sitio",
       items: [
         {
           name: "Retroalimentación por pseudo-relevancia generativa",
+          category: "Recuperación de Información",
+          categoryColor: "blue",
           url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
+          repoUrl: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
           description:
             "Enmarcada dentro del área de Recuperación de Información, se propone realizar una comparación entre los métodos básicos de expansión de consultas y uno nuevo basado en la generación de términos adicionales a través del uso de un LLM contextualizado. El objetivo es optimizar la consulta original del usuario, formando una nueva que obtenga mejores resultados",
-          tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
+          tags: ["LLM", "Query Expansion", "RAG", "Python"],
         },
         {
           name: "Predicción de bancarrota mediante métodos de ensamble",
+          category: "Machine Learning",
+          categoryColor: "green",
           url: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
+          repoUrl: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
           description:
             "Notebook de ML que predice bancarrota de empresas usando el dataset \"American Companies Bankruptcy Prediction\" (Kaggle). Incluye EDA con detección de outliers y correlaciones (Spearman), preprocesamiento (eliminación de variables redundantes, escalado, manejo de desbalanceo de clases), y entrenamiento de 4 modelos calibrados (Logistic Regression, Random Forest, MLP, SVC) combinados en un ensamble soft-voting. Se prioriza el recall (minimizar falsos negativos), y se incluye un breve análisis final incluyendo qué variables del dataset afectan más la predicción.",
-          tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
+          tags: ["Python", "Colab","scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
         },
         {
           name: "Primatica Web",
+          category: "Programación Web",
+          categoryColor: "orange",
           url: "https://github.com/matiasrolon/primatica-web",
+          repoUrl: "https://github.com/matiasrolon/primatica-web",
+          siteUrl: "https://www.primatica.com.ar/",
           description:
             "Tienda web para un emprendimiento de impresiones 3D, totalmente administrable por el cliente. Desarrollada en React con infraestructura gratuita, utilizando Supabase para la base de datos y API, y Cloudinary para el almacenamiento de imágenes.",
           tags: ["React", "Supabase", "Cloudinary", "PostgreSQL", "E-commerce"],
@@ -247,24 +259,36 @@ export const content = {
     projects: {
       label: "R&D",
       subtitle: "Research and development focused on topics I am currently exploring.",
+      repoLabel: "Repo",
+      siteLabel: "Website",
       items: [
         {
           name: "Generative Pseudo-Relevance Feedback",
+          category: "Information Retrieval",
+          categoryColor: "blue",
           url: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
+          repoUrl: "https://github.com/matiasrolon/ri-query-optimization-by-rag",
           description:
             "Framed within Information Retrieval, this research compares basic query expansion methods with a novel approach based on generating additional terms using a contextualized LLM. The goal is to optimize the user's original query, creating a new one that achieves better results.",
-          tags: ["Information Retrieval", "LLM", "Query Expansion", "RAG", "Python"],
+          tags: ["LLM", "Query Expansion", "RAG", "Python"],
         },
         {
           name: "Bankruptcy Prediction by Ensemble Methods",
+          category: "Machine Learning",
+          categoryColor: "green",
           url: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
+          repoUrl: "https://github.com/matiasrolon/bankruptcy-prediction-ensemble",
           description:
             "ML notebook predicting corporate bankruptcy using the \"American Companies Bankruptcy Prediction\" dataset (Kaggle). Includes EDA with outlier detection and Spearman correlations, preprocessing (feature selection, scaling, class imbalance handling), and training 4 calibrated models (Logistic Regression, Random Forest, MLP, SVC) combined in a soft-voting ensemble.  Recall is prioritized (minimizing false negatives), and we include a brief final analysis to explain key predictive features.",
-          tags: ["Python", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
+          tags: ["Python", "Colab", "scikit-learn", "XGBoost", "Logistic Regression", "Ensemble Methods"],
         },
         {
           name: "Primatica Web",
+          category: "Web Development",
+          categoryColor: "orange",
           url: "https://github.com/matiasrolon/primatica-web",
+          repoUrl: "https://github.com/matiasrolon/primatica-web",
+          siteUrl: "https://www.primatica.com.ar/",
           description:
             "Web store for a 3D printing venture, fully manageable by the client. Built on React with free-tier infrastructure, using Supabase for the database and API, and Cloudinary for image storage.",
           tags: ["React", "Supabase", "Cloudinary", "PostgreSQL", "E-commerce"],
