@@ -36,11 +36,26 @@ const skillIcons = {
       <line x1="1" y1="15" x2="4" y2="15" />
     </svg>
   ),
+  server: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skills__title-icon">
+      <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+      <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+      <line x1="6" x2="6.01" y1="6" y2="6" />
+      <line x1="6" x2="6.01" y1="18" y2="18" />
+    </svg>
+  ),
+  layout: (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skills__title-icon">
+      <rect width="18" height="18" x="3" y="3" rx="2" />
+      <path d="M3 9h18" />
+      <path d="M9 21V9" />
+    </svg>
+  ),
   globe: (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="skills__title-icon">
       <circle cx="12" cy="12" r="10" />
       <line x1="2" y1="12" x2="22" y2="12" />
-      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z" />
     </svg>
   ),
 };
@@ -50,8 +65,8 @@ export default function Skills({ t }) {
     <section className="section" id="skills">
       <h2 className="section__title">// {t.skills.label}</h2>
       <div className="skills__stack">
-        {t.skills.groups.map((group) => (
-          <div className="skills__group" key={group.title}>
+        {t.skills.groups.map((group, index) => (
+          <div className="skills__group" key={group.title + index}>
             <h3 className="skills__title">
               {group.icon && skillIcons[group.icon]}
               <span>{group.title}</span>

@@ -52,9 +52,9 @@ export default function Projects({ t }) {
               </ul>
             )}
             <div className="project-card__actions">
-              {(project.repoUrl || project.url) && (
+              {project.repoUrl && (
                 <a
-                  href={project.repoUrl || project.url}
+                  href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="project-btn"
