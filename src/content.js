@@ -41,7 +41,7 @@ export const content = {
         { title: "Bases de datos", icon: "database", items: ["PostgreSQL", "Supabase", "MySQL", "SQL Server", "MongoDB"] },
         { title: "Frontend", icon: "layout", items: ["React", "Next.js", "Redux","Material UI"] },
         { title: "Herramientas", icon: "tools", items: ["Git/GitHub", "Docker", "Claude Code", "ClickUp"] },
-        { title: "Idiomas", icon: "globe", items: ["Español (nativo)", "Inglés (Intermedio - B1)"] },
+        { title: "Idiomas", icon: "globe", items: ["Español (nativo)", "Inglés (Conversacional - B1)"] },
       ],
     },
     experience: {
@@ -196,7 +196,7 @@ export const content = {
         { title: "Databases", icon: "database", items: ["PostgreSQL", "Supabase", "MySQL", "SQL Server", "MongoDB"] },
         { title: "Frontend", icon: "layout", items: ["React", "Next.js", "Redux","Material UI"] },
         { title: "Tools", icon: "tools", items: ["Git/GitHub", "Docker", "Claude Code", "ClickUp"] },
-        { title: "Languages (Spoken)", icon: "globe", items: ["Spanish (Native)", "English (Intermediate - B1)"] },
+        { title: "Languages", icon: "globe", items: ["Spanish (Native)", "English (Conversational - B1)"] },
       ],
     },
     experience: {
