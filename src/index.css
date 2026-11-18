@@ -704,11 +704,62 @@ a {
 }
 
 .timeline__details.is-open {
-  max-height: 500px;
+  max-height: 1200px;
   opacity: 1;
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
+}
+
+.timeline__roles {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.timeline__role {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.timeline__role::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.timeline__role:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 3.5px;
+  top: 1.15rem;
+  bottom: -1.55rem;
+  width: 1px;
+  background: var(--line);
+}
+
+.timeline__role-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.timeline__role-title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.timeline__role-head .timeline__period {
+  margin-top: 0;
 }
 
 .bullets {
